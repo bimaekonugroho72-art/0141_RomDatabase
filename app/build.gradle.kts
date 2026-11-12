@@ -1,17 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.kps)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.example.pertemuan9"
+    namespace = "com.example.pampertemuan9"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.pertemuan9"
+        applicationId = "com.example.pampertemuan9"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -46,6 +46,17 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     testImplementation(libs.junit)
+
+    //icons
+    implementation(libs.compose.icons)
+    //Room
+    implementation(libs.bundles.room)
+    ksp(libs.room.compiler)
+    //ViewModel
+    implementation(libs.lifecycle.viewmodel.compose)
+    // Navigasi
+    implementation(libs.navigation.compose)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
