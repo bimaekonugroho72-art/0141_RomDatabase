@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pampertemuan9"
+    namespace = "com.example.roomdb"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.pampertemuan9"
+        applicationId = "com.example.roomdb"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

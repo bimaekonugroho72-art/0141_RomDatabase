@@ -1,4 +1,4 @@
-package com.example.pertemuan9
+package com.example.roomdb
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
